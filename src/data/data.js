@@ -1,4 +1,4 @@
-export const journeys = [
+export const data = [
   {
     title: "Mount Fuji",
     location: "Japan",
