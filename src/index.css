@@ -21,16 +21,45 @@ nav h1 {
   letter-spacing: -0.075em;
 }
 
-nav i {
+.fa-earth-americas {
   font-size: 24px;
+}
+
+.fa-location-dot {
+  color: #f55a5a;
+}
+
+.destination-country {
+  margin: 0 12px 0 4px;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.destination-map {
+  color: #918e9b;
+}
+
+.destination-date,
+.destination-map,
+.destination-country,
+.fa-location-dot {
+  line-height: 12px;
 }
 
 h2 {
   font-size: 25px;
+}
+
+.destination-date,
+h2 {
   font-weight: 700;
 }
 
 /* CONTENT */
+
+.flex {
+  display: flex;
+}
 
 nav {
   height: 55px;
@@ -39,8 +68,58 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 45px;
 }
 
 nav > * {
   padding: 3.5px;
+}
+
+main {
+  max-width: 550px;
+  min-width: 360px;
+  margin: 0 auto;
+}
+
+.destination {
+  align-items: center;
+  margin: 18px 40px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.destination-location {
+  margin-top: 5px;
+}
+
+img {
+  height: 168px;
+  width: 125px;
+  object-fit: cover;
+  background-color: #f55a5a;
+  color: #fff;
+  border-radius: 5px;
+  margin-right: 19px;
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .destination-country,
+  .destination-map {
+    font-size: 9px;
+  }
+
+  .destination-date {
+    margin-top: 3px;
+  }
+}
+
+@media (max-width: 404px) {
+  .destination {
+    margin: 15px;
+  }
 }

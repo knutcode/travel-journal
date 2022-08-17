@@ -1,7 +1,7 @@
 const Navbar = () => {
   return (
     <nav>
-      <i class="fa-solid fa-earth-americas"></i>
+      <i className="fa-solid fa-earth-americas"></i>
       <h1>my travel journal.</h1>
     </nav>
   );
